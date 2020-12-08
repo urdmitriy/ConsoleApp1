@@ -10,7 +10,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"[{DateTime.Now}] Hello world") ;
+            Console.WriteLine("Введите ваше имя:");
+            string name = Console.ReadLine();
+            Console.WriteLine($"Привет, {name}, сегодня {DateTime.Now}");
             Console.ReadLine();
         }
     }
