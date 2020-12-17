@@ -8,8 +8,24 @@ namespace HW2_2
 {
     class Program
     {
+        enum Mes
+        {
+            jan=1,
+            fev,
+            mert,
+            apr,
+            may,
+            jun,
+            jul,
+            aug,
+            sep,
+            nov,
+            dec
+        }
         static void Main(string[] args)
         {
+
+
             Console.WriteLine("Введите порядковый номер текущего месяца");
             int mounthN = Convert.ToInt32(Console.ReadLine());
             string mounthW = null;
@@ -56,6 +72,9 @@ namespace HW2_2
                     break;
             }
             Console.WriteLine($"Вы ввели месяц: {mounthW}");
+
+            Mes mounth =(Mes)Convert.ToInt32(mounthN);
+            Console.WriteLine($"Вы ввели месяц {mounth}");
             Console.ReadLine();
         }
     }
