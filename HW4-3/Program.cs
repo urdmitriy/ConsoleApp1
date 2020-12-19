@@ -57,7 +57,7 @@ namespace HW4_3
                     result = "Весна";
                     break;
                 case Seasons.Summer:
-                    result = "Осень";
+                    result = "Лето";
                     break;
                 case Seasons.Autumn:
                     result = "Осень";
